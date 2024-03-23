@@ -1,10 +1,10 @@
-<html>
+<html lang="en">
 <head>
   <!--
-  Edited by: Beza, Credit goes to Mobirise for the template design
+  Edited by: Beza
+  Credit to Mobirise for the template design
   Original link: https://mobirise.com/extensions/resumeamp/webDesigner/
   -->
-
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +12,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo1.png" type="image/x-icon">
   <meta name="description" content="New ResumeAMP CSS Template">
-  <title>Web designer Demo</title>
+  <title>Beza's Portfolio Website</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="canonical" href="index.html">
+  <!--
+  Used for Gothic Font:
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
+  -->
 
  <style amp-boilerplate="">
     body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
@@ -32,11 +35,8 @@
     </style>
   </noscript>
 
-
-
-
  <style amp-custom="">
-    div,span,h1,h2,h3,h4,h5,h6,p,a,ol,ul,li,figcaption{font: inherit;}
+    div,span,h1,h2,h3,h4,h5,h6,p,a,ol,ul,li,figcaption{font: inherit;font-family: Inter,Helvetica Neue,Helvetica,Arial,"sans-serif";}
     *{box-sizing: border-box;}body{position: relative;font-style: normal;line-height: 1.5;color: #232323;}
     section{background-color: #eeeeee;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;}
     section,.container,.container-fluid{position: relative;word-wrap: break-word;}a.mbr-iconfont:hover{text-decoration: none;}
@@ -65,9 +65,11 @@
       background-color: rgba(200, 255, 255, 0.2);
       padding: 20px 0;
     }
+    @media (max-width: 767px){.timeline{padding:0px;grid-template-columns: 75px auto;}}
+
     .skill{
       display: grid;
-      grid-template-columns: auto auto auto;
+      grid-template-columns: auto auto auto auto;
       grid-gap: 10px;
       padding: 10px;
     }
@@ -75,6 +77,24 @@
       background-color: rgba(200, 255, 255, 0);
       padding: 20px 0;
     }
+    .skill2{
+      height: 20px;
+      opacity: 0;
+    	transition: height 0.7s;
+    	transition-timing-function: ease;
+    }
+    @media (max-width: 767px){.skill{grid-gap: 0px;padding: 0px;grid-template-columns: auto auto;}}
+
+    .cover{height: 235px;}
+    .faded{opacity: 0.4; transition: 0.5s;} .faded:hover {opacity: 1;}
+    .expand{
+      opacity: 0.6;
+      width: 0px;
+      transition: width 0.7s;
+      transition-timing-function: ease;
+    }
+    .expand:hover{opacity: 1; width: 300px;}
+
     .card-box2{overflow: hidden;}
 
     .padding-top{padding-top: 5px;}
@@ -93,8 +113,10 @@
     .btn-all-width:hover{margin-left: 0.8rem;margin-right: -0.8rem;}
     .btn-form:hover{cursor: pointer;}
 
-    .mbr-col-md-4{-ms-flex: 0 0 33.333333%;flex: 0 0 33.333333%;max-width: 33.333333%;padding-right: 15px;padding-left: 15px;}
+    .mbr-col-md-4{-ms-flex: 0 0 33.333333%;flex: 0 0 33.333333%;max-width: 33.333333%;padding-right: 20px;padding-left: 20px;}
+    /*Column divider between 'Education' and 'Resume' sections*/
     .mbr-col-md-6{-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;padding-right: 15px;padding-left: 15px;}
+    @media (max-width: 767px){.mbr-col-md-6{flex: none; max-width: none;}}
     .mbr-col-md-12{-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;padding-right: 15px;padding-left: 15px;}
 
     .align-left{text-align: left;}
@@ -105,7 +127,8 @@
     @media (max-width: 767px){.align-left,.align-center,.align-right,.mbr-section-btn,.mbr-regular{font-weight: 400;}}
     @media (max-width: 991px){.is-builder section.horizontal-menu .navbar-toggler{display: block;}}
     @media (min-width: 1200px){.container{max-width: 1366px;}}.mbr-row{display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap;margin-right: -15px;margin-left: -15px;}.mbr-justify-content-center{justify-content: center;}.mbr-justify-content-left{justify-content: flex-start;}
-    @media (min-width: 992px){.mbr-col-lg-2{-ms-flex: 0 0 16.666667%;flex: 0 0 16.666667%;max-width: 16.666667%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-3{-ms-flex: 0 0 25%;flex: 0 0 25%;max-width: 25%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-4{-ms-flex: 0 0 33.33%;flex: 0 0 33.33%;max-width: 33.33%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-5{-ms-flex: 0 0 41.666%;flex: 0 0 41.666%;max-width: 41.666%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-6{-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-8{-ms-flex: 0 0 66.666667%;flex: 0 0 66.666667%;max-width: 66.666667%;padding-left: 15px;padding-right: 15px;}.mbr-col-lg-10{-ms-flex: 0 0 83.3333%;flex: 0 0 83.3333%;max-width: 83.3333%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-12{-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;padding-right: 15px;padding-left: 15px;}}
+    /*Contact form spacing at ~laptop size screen*/
+    @media (min-width: 992px){.mbr-col-lg-2{-ms-flex: 0 0 16.666667%;flex: 0 0 16.666667%;max-width: 16.666667%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-3{-ms-flex: 0 0 25%;flex: 0 0 25%;max-width: 25%;padding-right: 15px;padding-left: 15px; padding-top: 35px; padding-bottom: 35px;}.mbr-col-lg-4{-ms-flex: 0 0 33.33%;flex: 0 0 33.33%;max-width: 33.33%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-5{-ms-flex: 0 0 41.666%;flex: 0 0 41.666%;max-width: 41.666%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-6{-ms-flex: 0 0 50%;flex: 0 0 70%;max-width: 70%;padding-right: 10px;padding-left: 10px; padding-top: 35px; padding-bottom: 35px;}.mbr-col-lg-8{-ms-flex: 0 0 66.666667%;flex: 0 0 66.666667%;max-width: 66.666667%;padding-left: 15px;padding-right: 15px;}.mbr-col-lg-10{-ms-flex: 0 0 83.3333%;flex: 0 0 83.3333%;max-width: 83.3333%;padding-right: 15px;padding-left: 15px;}.mbr-col-lg-12{-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;padding-right: 15px;padding-left: 15px;}}
     @media (min-width: 1200px){.mbr-col-xl-7{-ms-flex: 0 0 58.333333%;flex: 0 0 58.333333%;max-width: 58.333333%;padding-right: 15px;padding-left: 15px;}.mbr-col-xl-8{-ms-flex: 0 0 66.666667%;flex: 0 0 66.666667%;max-width: 66.666667%;padding-left: 15px;padding-right: 15px;}}
     @media (max-width: 768px){.display-1{font-size: 2.08rem;font-size: calc( 1.56rem + (2.6 - 1.56) * ((100vw - 20rem) / (48 - 20)));line-height: calc( 1.4 * (1.56rem + (2.6 - 1.56) * ((100vw - 20rem) / (48 - 20))));}.display-2{font-size: 1.68rem;font-size: calc( 1.385rem + (2.1 - 1.385) * ((100vw - 20rem) / (48 - 20)));line-height: calc( 1.4 * (1.385rem + (2.1 - 1.385) * ((100vw - 20rem) / (48 - 20))));}.display-4{font-size: 0.72rem;font-size: calc( 0.965rem + (0.9 - 0.965) * ((100vw - 20rem) / (48 - 20)));line-height: calc( 1.4 * (0.965rem + (0.9 - 0.965) * ((100vw - 20rem) / (48 - 20))));}.display-5{font-size: 1.28rem;font-size: calc( 1.21rem + (1.6 - 1.21) * ((100vw - 20rem) / (48 - 20)));line-height: calc( 1.4 * (1.21rem + (1.6 - 1.21) * ((100vw - 20rem) / (48 - 20))));}}
     @media (max-width: 991px){.cid-qV1bXGdTKC .navbar-expand-lg > .container{padding-left: 15px;padding-right: 15px;}.cid-qV1bXGdTKC ul.navbar-nav{flex-direction: row;}.cid-qV1bXGdTKC ul.navbar-nav li{margin: auto;}.cid-qV1bXGdTKC .dropdown-toggle[data-toggle="dropdown-submenu"]:after{content: '';margin-left: .25rem;border-top: 0.35em solid;border-right: 0.35em solid transparent;border-left: 0.35em solid transparent;border-bottom: 0;top: 55%;}.cid-qV1bXGdTKC .nav-dropdown .dropdown-menu .dropdown-item{justify-content: center;display: flex;align-items: center;}}
@@ -123,7 +146,8 @@
     }
     @media (max-width: 768px){.cid-qV1bXGdTKC amp-img{max-height: 55px;max-width: 55px;}}
     @media (max-width: 991px){.cid-qV1cSTAxXZ .image-block{padding-right: 0;padding-left: 0;}.cid-qV1cSTAxXZ .text-block{padding-right: 0;padding-left: 0;}}
-    @media (max-width: 767px){.cid-qV1dUvIIs5 .mbr-row{padding: 1rem;}}
+
+
     @media (max-width: 991px){.cid-qV1iHI7Yuz .first-row-card{margin-bottom: 10px;}}
     @media (max-width: 767px){.cid-qV1iHI7Yuz .card:not(.last-child){margin-bottom: 10px;}}
     @media (max-width: 767px){.cid-qV1wBkW0kf .mbr-row{padding: 1rem;}}
@@ -135,14 +159,12 @@
     /*Map data*/ @media (max-width: 991px){.cid-qV1JYvtnPg .map-container{padding-right: 0;padding-left: 0;}.cid-qV1JYvtnPg .map-form{padding-right: 0;padding-left: 0;}.cid-qV1JYvtnPg .google-map{height: 25rem;}}
     @media (max-width: 767px){.cid-qV1JYvtnPg .mbr-form{width: 100%;}}
     @media (max-width: 991px){.cid-qV1JRgESNb .mbr-col-md-12{text-align: center;margin: auto;}.cid-qV1JRgESNb .items-col.first-row-card{margin-bottom: 20px;}.cid-qV1JRgESNb .mbr-row{padding-right: 40px;padding-left: 40px;}}
-    @media (max-width: 767px){.cid-qV1JRgESNb .mbr-col-sm-12{text-align: center;margin: auto;}
+    @media (max-width: 767px){.cid-qV1JRgESNb .mbr-col-sm-12{text-align: center;margin: auto;padding:0px;}
     .cid-qV1JRgESNb .items-col:not(.last-child){margin-bottom: 20px;}.cid-qV1JRgESNb .mbr-row{padding-right: 20px;padding-left: 20px;}
     .cid-qV1JRgESNb .icons-list > div,.cid-qV1JRgESNb .icons-list > div > a{display: block;}
     .cid-qV1JRgESNb .icons-list > div > span.item{display: inline-block;padding-left: 0;}
     .cid-qV1JRgESNb .icons-list > div:not(.last-child){margin-bottom: 10px;}
     }
-
-
 
 
     .mbr-fullscreen .mbr-overlay{min-height: 100vh;}
@@ -158,12 +180,12 @@
     .mbr-container{max-width: 800px;padding: 0 10px;margin: 0 auto;position: relative;}.container{padding-right: 15px;padding-left: 15px;width: 100%;margin-right: auto;margin-left: auto;}
 
     body{font-family: Didact Gothic;}
-    .display-1{font-family: 'Didact Gothic',sans-serif;font-size: 2.6rem;}
-    .display-2{font-family: 'Didact Gothic',sans-serif;font-size: 2.1rem;}
-    .display-4{font-family: 'Didact Gothic',sans-serif;font-size: 0.9rem;}
-    .display-5{font-family: 'Didact Gothic',sans-serif;font-size: 1.6rem;}
-    .display-7{font-family: 'Didact Gothic',sans-serif;font-size: 0.8rem;}
-    .display-8{font-family: 'Didact Gothic',sans-serif;font-size: 0.65rem;}
+    .display-1{font-family: Inter,Helvetica Neue,Helvetica,Arial,"sans-serif";font-size: 2.6rem;}
+    .display-2{font-family: Inter,Helvetica Neue,Helvetica,Arial,"sans-serif";font-size: 2.1rem;}
+    .display-4{font-family: Inter,Helvetica Neue,Helvetica,Arial,"sans-serif";font-size: 0.9rem;}
+    .display-5{font-family: Inter,Helvetica Neue,Helvetica,Arial,"sans-serif";font-size: 1.6rem;}
+    .display-7{font-family: Inter,Helvetica Neue,Helvetica,Arial,"sans-serif";font-size: 0.8rem;}
+    .display-8{font-family: Inter,Helvetica Neue,Helvetica,Arial,"sans-serif";font-size: 0.65rem;}
 
     .btn{padding: 15px 20px;border-radius: 0px;}.btn-sm{border-width: 1px;padding: 0.6rem 0.6rem;border-radius: 0px;}
 
@@ -187,7 +209,6 @@
     a:not(.dropdown-item):hover:before,a:not(.dropdown-item):focus:before{height: 0.5rem;}
 
     .alert-success{background-color: #0dcd7b;}.alert-info{background-color: #8282e7;}.alert-warning{background-color: #767676;}.alert-danger{background-color: #a0a0a0;}
-
 
     a,a:hover{color: #4ea2e3;}
     .mbr-plan-header.bg-primary .mbr-plan-subtitle,.mbr-plan-header.bg-primary .mbr-plan-price-desc{color: #feffff;}
@@ -291,6 +312,8 @@
     .cid-qV1dUvIIs5{padding-top: 5px;padding-bottom: 5px;background-color: #eaf4f6;}
     .cid-qV1dUvIIs5 .mbr-row{background-image: url("FullSizeRender4.jpg");background-position: center;background-repeat: no-repeat;background-size: cover;height: 30rem;padding: 60px;position: relative;margin: 0;}
     .cid-qV1dUvIIs5 .mbr-row .mbr-overlay{background: #eadcd1;opacity: 0.3;}
+    /*'About Me' section on phone size*/
+    @media (max-width: 767px){.cid-qV1dUvIIs5 .mbr-row{padding: 1rem;height: auto;}}
     .cid-qV1dUvIIs5 .mbr-title{position: relative;margin-bottom: 70px;color: #000000;}
     .cid-qV1dUvIIs5 .mbr-title:after{position: absolute;left: 50%;margin-left: -1.5rem;bottom: -35px;content: "";width: 3rem;height: 2px;background-color: #000000;transition: width .3s;}
     .cid-qV1dUvIIs5 .relative{position: relative;max-width: 435px;margin: auto;}
@@ -312,7 +335,6 @@
     .cid-qV1iHI7Yuz h4.card-title{margin-bottom: 25px;margin-top: 25px;}
     .cid-qV1iHI7Yuz .card-icon{margin-bottom: 20px;}
     .cid-qV1iHI7Yuz .amp-iconfont{padding: 1rem;background-color: #cbe6ea;color: #000000;border-radius: 50%;width: calc(2.8rem + 2rem);height: calc(2.8rem + 2rem);font-size: 2.8rem;}
-
 
     .cid-qV1wBkW0kf{padding-top: 5px;padding-bottom: 5px;background-color: #eaf4f6;}
     .cid-qV1wBkW0kf .mbr-row{background-color: #cbe6ea;height: 12rem;padding: 60px;position: relative;margin: 0;}
@@ -353,8 +375,8 @@
     .cid-qV1JYvtnPg label.area{width: 100%;margin: 0;}
     .cid-qV1JYvtnPg label input{margin-bottom: 7px;}
     .cid-qV1JYvtnPg label textarea{margin-bottom: 7px;}
-    .cid-qV1JYvtnPg input{font: inherit;}
-    .cid-qV1JYvtnPg textarea{width: 100%;max-width: 100%;font: inherit;}
+    .cid-qV1JYvtnPg input{font-family: Inter,Helvetica Neue,Helvetica,Arial,"sans-serif";}
+    .cid-qV1JYvtnPg textarea{width: 100%;max-width: 100%;font-family: Inter,Helvetica Neue,Helvetica,Arial,"sans-serif";}
     .cid-qV1JYvtnPg .btn.btn-form{line-height: 20px;}
     .cid-qV1JYvtnPg .btn-block{width: 100%;}
     .cid-qV1JYvtnPg .btn-block .btn{width: 100%;}
@@ -375,12 +397,12 @@
     .engine{position: absolute;text-indent: -2400px;text-align: center;padding: 0;top: 0;left: -2400px;}
 </style>
 
-
-  <script async="" src="https://cdn.ampproject.org/v0.js"></script>
-  <!-- Google Map: <script async="" custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>-->
-  <script async="" custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <!-- Google Map:
+  <script async="" custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async="" custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-
+  -->
+  <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+  <script async="" custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 
 
 <script async="" custom-element="amp-auto-lightbox" data-script="amp-auto-lightbox" i-amphtml-inserted="" crossorigin="anonymous" src="https://cdn.ampproject.org/rtv/012402141842000/v0/amp-auto-lightbox-0.1.js"></script></head>
@@ -470,7 +492,7 @@
     <div class="container">
         <div class="mbr-row mbr-justify-content-center">
             <div class="image-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-8">
-                <amp-img src="IMG_40642.JPG" layout="responsive" alt="Resume AMP Theme" width="624.1829375549693" height="416" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 66.6471%;"></i-amphtml-sizer>
+                <amp-img src="IMG_40642.JPG" layout="responsive" alt="Resume AMP Theme" width="4272" height="2394" class="i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-built i-amphtml-layout" i-amphtml-layout="responsive"><i-amphtml-sizer slot="i-amphtml-svc" style="padding-top: 66.6471%;"></i-amphtml-sizer>
 
                 <img decoding="async" alt="Resume AMP Theme" src="IMG_40642.JPG" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
             </div>
@@ -510,7 +532,7 @@
                     <p>Hello! My name is Beza and I’m originally from Silver Spring, Maryland.
                       Once I graduated from high school in 2020, I moved to New York City to attend college at New York Institute of Technology, at the Manhattan Campus.
                       I majored in Computer Science for my Undergraduate studies and am set to graduate in May 2024.
-                      I am currently looking for employment as a Software Engineer, but hope to someday find research oriented work with semiconductors.
+                      I am currently looking for employment as a Software Engineer, but plan to someday find research oriented work with semiconductor devices.
                     </p>
 
                     <p>RESIDENCE . . . . . USA</p>
@@ -568,7 +590,7 @@
                             <div class="right1 display-7">
                               <div class="left-padding">
                               <strong>  NEW YORK INSTITUTE OF TECHNOLOGY "NYIT" </strong>&nbsp;
-                              <br><em class="display-8">(New York, NY)</em>
+                              <br><em class="display-8 faded">(New York, NY)</em>
                               <br><em class="display-8"> B.S of Computer Science - College of Engineering and Computing Science </em>
                               <br><br>Steele Scholarship Recipient, Presidential Honor List, Dean's Honor List <br><br>
                               </div>
@@ -580,18 +602,18 @@
                             <div class="right2 display-7">
                               <div class="left-padding">
                               <strong> MONTGOMERY COLLEGE </strong> &nbsp;
-                              <br><em class="display-8">(Rockville, MD)</em>
+                              <br><em class="display-8 faded">(Rockville, MD)</em>
                               <br><br>Dual Enrolled while attending high school. Learned the fundamentals of C++ and business applied calculus. <br><br>
                             </div>
                             </div>
 
                             <div class="left3">
-                              <center>2020 - 2016</center>
+                              <center>2020</center>
                             </div>
                             <div class="right3 display-7">
                               <div class="left-padding">
-                              <strong>NORTHWOOD HIGH SCHOOL </strong> &nbsp;
-                              <br><em class="display-8">(Silver Spring, MD)</em><br><br>
+                              <strong>NORTHWOOD HIGH SCHOOL DIPLOMA</strong> &nbsp;
+                              <br><em class="display-8 faded">(Silver Spring, MD)</em><br><br>
                             </div>
                             </div>
 
@@ -617,29 +639,156 @@
                         <p class="mbr-text mbr-fonts-style align-center display-4">
                           <div class="skill align-center">
 
-                            <div class="left1 btn">
+                            <div class="left1 btn" id="id1"> <!-- id each grid space then add onmouseover="document.getElementById('id1').style.opacity = '0.4'
+document.getElementById('id1').style.transition = '0.5s'"
+onmouseout="document.getElementById('id1').style.opacity ='1'"
+-->
                               Java
                             </div>
-                            <div class="right1 btn">
+                            <div class="right1 btn" id="id2">
                               C++
                             </div>
-                            <div class="left2 btn">
+                            <div class="left2 btn" id="id3">
                               Python
                             </div>
-                            <div class="right2 btn">
+                            <div class="right2 btn" id="id4">
                               SQL
                             </div>
-                            <div class="left3 btn">
-                              Apache Server
+                            <div class="left3 btn display-7" id="id5">
+                              Apache <br>Server
                             </div>
-                            <div class="right3 btn">
+                            <div class="right3 btn" id="id6">
                               PHP
                             </div>
-                            <br><br><br><br><br>
-                            <br><br><br><br>
-
-
+                            <div class="right3 btn" id="id7">
+                              Linux
+                            </div>
+                            <div class="right3 btn display-7" id="id8">
+                              HTML/CSS/<br>Javascript
+                            </div>
                           </div>
+
+                          <div class="cover"> <!-- height space -->
+                            <div class = "skill2" id="sid">
+                            <h3 id="hid">hi</h3>
+                            <h3 id="hid2">▮</h3>
+                            </div>
+                              <h3 id="hid3">↑ Hover over the buttons! ↑</h3>
+                          </div>
+
+                          <script>
+var a = document.getElementById("id1");
+var b = document.getElementById("id2");
+var c = document.getElementById("id3");
+var d = document.getElementById("id4");
+var e = document.getElementById("id5");
+var f = document.getElementById("id6");
+var g = document.getElementById("id7");
+var h = document.getElementById("id8");
+a.addEventListener("mouseover", java); a.addEventListener("mouseout", mOut);
+b.addEventListener("mouseover", cpp); b.addEventListener("mouseout", mOut);
+c.addEventListener("mouseover", python); c.addEventListener("mouseout", mOut);
+d.addEventListener("mouseover", sql); d.addEventListener("mouseout", mOut);
+e.addEventListener("mouseover", apache); e.addEventListener("mouseout", mOut);
+f.addEventListener("mouseover", php); f.addEventListener("mouseout", mOut);
+g.addEventListener("mouseover", linux); g.addEventListener("mouseout", mOut);
+h.addEventListener("mouseover", html); h.addEventListener("mouseout", mOut);
+
+function java() {
+  document.getElementById("sid").style.opacity = "1";
+  document.getElementById("sid").style.transition = "0.7s";
+  document.getElementById("sid").style.background = "black";
+  document.getElementById("sid").style.color = "green";
+  document.getElementById("sid").style.height = "200px";
+  document.getElementById("hid").style.opacity = "1";
+  document.getElementById("hid").style.padding = "16px 32px";
+  document.getElementById("hid").innerText = "IDE: IntelliJ, Eclipse\n\nProjects: \n\n> Translation from Morse Code to English with a Binary Tree structure, implemented with stacks.";
+}
+function cpp() {
+  document.getElementById("sid").style.opacity = "1";
+  document.getElementById("sid").style.transition = "0.7s";
+  document.getElementById("sid").style.background = "black";
+  document.getElementById("sid").style.color = "green";
+  document.getElementById("sid").style.height = "200px";
+  document.getElementById("hid").style.opacity = "1";
+  document.getElementById("hid").style.padding = "16px 32px";
+  document.getElementById("hid").innerText = "IDE: XCode\n\nProjects: \n\n> Chemistry Calculator- to solve atomic composition using the periodic table.\n\n> Matrix Multiplication of a 2x2 matrix.";
+}
+function python() {
+  document.getElementById("sid").style.opacity = "1";
+  document.getElementById("sid").style.transition = "0.7s";
+  document.getElementById("sid").style.background = "black";
+  document.getElementById("sid").style.color = "green";
+  document.getElementById("sid").style.height = "230px";
+  document.getElementById("hid").style.opacity = "1";
+  document.getElementById("hid").style.padding = "16px 32px";
+  document.getElementById("hid").innerText = "IDE: PyCharm\n\nProjects: \n\n> Magnetometer Sensor Data Analysis- experimental study of magnetic field data with smartphone devices.\n\n> Image Steganography- where a message is encoded onto the RGB values of a PNG image.";
+}
+function sql() {
+  document.getElementById("sid").style.opacity = "1";
+  document.getElementById("sid").style.transition = "0.7s";
+  document.getElementById("sid").style.background = "black";
+  document.getElementById("sid").style.color = "green";
+  document.getElementById("sid").style.height = "150px";
+  document.getElementById("hid").style.opacity = "1";
+  document.getElementById("hid").style.padding = "16px 32px";
+  document.getElementById("hid").innerText = "Softwares: MySQL, MAMP, Sqlite\n\nProjects: Attendance Tracking Database; Music Playlist Database.";
+}
+function apache() {
+  document.getElementById("sid").style.opacity = "1";
+  document.getElementById("sid").style.transition = "0.7s";
+  document.getElementById("sid").style.background = "black";
+  document.getElementById("sid").style.color = "green";
+  document.getElementById("sid").style.height = "200px";
+  document.getElementById("hid").style.opacity = "1";
+  document.getElementById("hid").style.padding = "16px 32px";
+  document.getElementById("hid").innerText = "Use: HTTPS Server-side for Web Development\n\nProjects: Hosted websites on my network to connect to SQL databases.";
+}
+function php() {
+  document.getElementById("sid").style.opacity = "1";
+  document.getElementById("sid").style.transition = "0.7s";
+  document.getElementById("sid").style.background = "black";
+  document.getElementById("sid").style.color = "green";
+  document.getElementById("sid").style.height = "200px";
+  document.getElementById("hid").style.opacity = "1";
+  document.getElementById("hid").style.padding = "16px 32px";
+  document.getElementById("hid").innerText = "IDE: PHPStorm, Atom\n\nProjects:\n\n> QR Code system for attendance tracking.";
+}
+function linux() {
+  document.getElementById("sid").style.opacity = "1";
+  document.getElementById("sid").style.transition = "0.7s";
+  document.getElementById("sid").style.background = "black";
+  document.getElementById("sid").style.color = "green";
+  document.getElementById("sid").style.height = "150px";
+  document.getElementById("hid").style.opacity = "1";
+  document.getElementById("hid").style.padding = "16px 32px";
+  document.getElementById("hid").innerText = "Use: Command line for UNIX, Parrot Distro\n\n> I use homebrew, macports, and zsh shells most often.";
+}
+function html() {
+  document.getElementById("sid").style.opacity = "1";
+  document.getElementById("sid").style.transition = "0.7s";
+  document.getElementById("sid").style.background = "black";
+  document.getElementById("sid").style.color = "green";
+  document.getElementById("sid").style.height = "200px";
+  document.getElementById("hid").style.opacity = "1";
+  document.getElementById("hid").style.padding = "16px 32px";
+  document.getElementById("hid").innerText = "Use: UI for Web Development\n\nProjects:\n\n> Attendance tracking system.\n\n > This portfolio you're looking at!";
+}
+function mOut() {
+  document.getElementById("hid").style.opacity = "0.5";
+  document.getElementById("hid").style.transition = "0.7s";
+  document.getElementById("hid3").style.opacity = "0";
+}
+
+  var blink_speed = 700; // every 1000 == 1 second, adjust to suit
+  var t = setInterval(function () {
+    var ele = document.getElementById('hid2'); ele.style.padding = "0px 32px";
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+  }, blink_speed);
+
+
+</script>
+
                         </p>
                     </div>
                 </div>
@@ -662,7 +811,7 @@
                         <p class="mbr-text mbr-fonts-style align-center display-4">
                           <div class="timeline">
                               <div class="left1">
-                                <center>PRESENT-2021</center>
+                                <center>PRESENT - 2021</center>
                               </div>
                               <div class="right1 display-7">
                                 <div class="left-padding">
@@ -674,7 +823,7 @@
 
 
                               <div class="left2">
-                                <center>2023-2021</center>
+                                <center>2023 - 2021</center>
                               </div>
                               <div class="right2 display-7">
                                 <div class="left-padding">
@@ -688,7 +837,7 @@
 
 
                               <div class="left3">
-                                  <center>2023-2022</center>
+                                  <center>2023 - 2022</center>
                               </div>
                               <div class="right3 display-7">
                                 <div class="left-padding">
@@ -810,19 +959,19 @@
                 </strong></h4>
                 <div class="icons-list mbr-justify-content-center">
                     <div class="mbr-col-sm-12 align-left mbr-col-md-4">
-                        <a href="https://www.linkedin.com/in/beza-nigatu-a636291b9" target="_blank">
+                        <a href="https://www.linkedin.com/in/beza-nigatu-a636291b9" target="_blank" title="LinkedIn Button Redirect">
                             <span class="amp-iconfont fa-linkedin-square fa"></span>
                         </a>
                         <span class="item mbr-fonts-style display-7"><a href="https://www.linkedin.com/in/beza-nigatu-a636291b9" target="_blank" class="text-black">LinkedIn</a></span>
                     </div>
-                    <div class="mbr-col-sm-12 align-left mbr-col-md-4 last-child">
-                        <a href="https://github.com/diressa" target="_blank">
+                    <div class="mbr-col-sm-12 align-left mbr-col-md-4">
+                        <a href="https://github.com/diressa" target="_blank" title="GitHub Button Redirect">
                             <span class="amp-iconfont fa-github-square fa"></span>
                         </a>
                         <span class="item mbr-fonts-style display-7"><a href="https://github.com/diressa" class="text-black">GitHub</a></span>
                     </div>
-                    <div class="mbr-col-sm-12 align-left mbr-col-md-4">
-                            <span class="amp-iconfont fa-phone-square fa"></span>
+                    <div class="mbr-col-sm-12 align-left mbr-col-md-4 last-child">
+                            <a><span class="amp-iconfont fa-phone-square fa"></span></a>
                             <span class="item mbr-fonts-style display-7">bezan329@gmail.com</span>
                     </div>
                 </div>
@@ -830,9 +979,6 @@
         </div>
     </div>
 </section>
-
-
-
 
 
 </body></html>
